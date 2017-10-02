@@ -24,14 +24,7 @@ import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class Utility {
-	private enum Suits {
-	    SPADES,
-	    HEARTS,
-	    DIAMONDS,
-	    CLUBS;
-	}
-	private enum Ranks { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King } 
+public class Utility { 
 
 	static String  userName;
 	public static void readOnFile(File file) {
@@ -995,5 +988,14 @@ public class Utility {
 		JSONArray jsonArray=new JSONArray();
 		JSONObject jsonObject=new JSONObject();
 	}*/
+	public Date printDate(String date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+		try{
+			return sdf.parse(date);
+		}
+		catch(Exception pe){
+			return null;
+		}
+	}
 }
 
