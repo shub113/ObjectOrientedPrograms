@@ -130,8 +130,8 @@ public class Clinique
 						System.out.println();
 						System.out.println("1.Search Docotor By id");
 						System.out.println("2.Search Docotor By Name");
-						System.out.println("3.Search Docotor By Availability");
-						System.out.println("4.Exit");
+						System.out.println("3.Exit");
+						//System.out.println("4.Exit");
 						System.out.println();
 						System.out.println("Enter your Choice: ");
 						int ch=scan.nextInt();
@@ -154,12 +154,12 @@ public class Clinique
 						case 3:
 								//search doctor by Availability
 								//System.out.println("Enter Docotor Availability");
-								String avail=scan.next();
-								ald=f.FindByava(ald,avail);
-								System.out.println(ald);
-								break;
-						case 4:
+								//String avail=scan.next();
+								//ald=f.FindByava(ald,avail);
+								//System.out.println(ald);
 								System.exit(0);
+								break;
+								
 						default:
 								System.out.println("Invalid choice");
 								break;
@@ -176,7 +176,7 @@ public class Clinique
 						System.out.println();
 						System.out.println("1.Search Patients By Id");
 						System.out.println("2.Search Patients By Name");
-						System.out.println("3.Search Patients By Mobile Number");
+			System.out.println("3.Search Patients By Mobile Number");
 						System.out.println("4.Exit");
 						System.out.println();
 						System.out.println("Enter your Choice: ");
